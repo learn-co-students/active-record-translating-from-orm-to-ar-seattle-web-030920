@@ -3,8 +3,8 @@ Bundler.require
 require 'rake'
 require 'active_record'
 
-require_relative '../lib/dog'
-require_relative 'sql_runner'
+require_relative '../lib/dog.rb'
+require_relative 'sql_runner.rb'
 
 DB = ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
